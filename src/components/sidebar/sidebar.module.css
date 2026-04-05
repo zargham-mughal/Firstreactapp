@@ -1,0 +1,22 @@
+.mysidebar {
+
+    width: 200px;
+    background-color: #24242b;
+    height: 80vh;
+    padding: 15px;
+
+
+}
+
+.mylist {
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.mylist li a {
+    margin: 15px 0;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
