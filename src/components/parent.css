@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    /* Deep Black */
+    color: #e0e0e0;
+    /* Off-White text */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Parent Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+    background: #1e1e1e;
+    /* Dark Grey */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th {
+    text-align: left;
+    color: #bb86fc;
+    /* Accent color */
+    border-bottom: 2px solid #333;
+    padding: 10px;
+}
+
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+/* Form Styling (Inside Child) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #bb86fc;
+}
+
+button {
+    background: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background: #9965f4;
+}
+
+button:active {
+    transform: scale(0.98);
+}
