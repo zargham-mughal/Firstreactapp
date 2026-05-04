@@ -1,0 +1,148 @@
+/* Color Palette Variables */
+:root {
+  --bg-main: #121212;
+  /* Deep Black */
+  --bg-card: #1e1e1e;
+  /* Dark Grey Card */
+  --bg-hover: #2d2d2d;
+  /* Lighter Grey for Hover */
+  --text-main: #e0e0e0;
+  /* Off-white Text */
+  --text-muted: #b0b0b0;
+  /* Muted Grey Text */
+  --accent: #d1bdbd;
+  /* Pure White Accent */
+  --accent-muted: #d8c9c9;
+  /* Mid-Grey Accent */
+  --border: #333333;
+  /* Subtle Border */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Page Containers */
+.home-container,
+.home-content,
+.error-container,
+.error-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+h1 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 60px;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--bg-card);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid var(--border);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: var(--bg-hover);
+  color: var(--accent);
+}
+
+nav a.active {
+  background-color: var(--accent);
+  color: var(--bg-main);
+}
+
+/* Table Styles (UsersPage.jsx & Usersdetail.jsx) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-card);
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+th {
+  background-color: #252525;
+  color: var(--accent);
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-main);
+}
+
+tr:hover {
+  background-color: var(--bg-hover);
+}
+
+/* Link Styles */
+a {
+  color: var(--accent-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Error State Specifics (ErrorPage.jsx) */
+.error-page h1,
+.error-container h1 {
+  color: #ff4d4d;
+  /* Kept a hint of red for errors, or change to #fff for full mono */
+  border-color: #ff4d4d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
